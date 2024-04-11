@@ -21,16 +21,6 @@ app.post('/api/fileanalyse',upload.single('upfile'),(request,response)=>{
   "size": request.file.size
 })
 });
-// app.post('/api/fileanalyse', upload.single('upfile'), function (req, res, next) {
-//   // setting json headers
-//   res.set({ 'Content-Type': 'application/json' });
-  
-//   // going on the logic :
-//   var file = req.file;
-//   if(file == undefined) res.json({error: "No file submitted"});
-//   else res.json({size: file.size, mimetype: file.mimetype, name: file.originalname});
-// });
-
 
 
 const port = process.env.PORT || 3000;
